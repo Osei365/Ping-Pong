@@ -82,6 +82,9 @@ while game:
             
             # window.blit(lose1, (150, 200))
             player2_score += 1
+            if player2_score == 10:
+                window.blit(lose1, (200, 100))
+                finish = True
             window.blit(font2.render(str(player2_score), True, (200, 255, 0)), (620, 30))
             tennis_ball.rect.x = 200
             tennis_ball.rect.y = 200
@@ -91,6 +94,9 @@ while game:
             
             # window.blit(lose2, (150, 200))
             player1_score += 1
+            if player1_score == 10:
+                window.blit(lose2, (200, 100))
+                finish = True
             window.blit(font2.render(str(player1_score), True, (200, 255, 0)), (30, 30))
             tennis_ball.rect.x = 200
             tennis_ball.rect.y = 200
